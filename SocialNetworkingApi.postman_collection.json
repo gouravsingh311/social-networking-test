@@ -1,49 +1,12 @@
 {
 	"info": {
-		"_postman_id": "7dfe1ba7-0b2c-40b7-ac7b-47cf588bfa84",
+		"_postman_id": "4f874435-80dc-4aaa-bc15-c6beb386bb61",
 		"name": "SocialNetworkingApi",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "24805939"
+		"_exporter_id": "32727151",
+		"_collection_link": "https://universal-escape-840992.postman.co/workspace/gourav~dac5aa8d-5617-48ae-af12-7d418cc17d91/collection/32727151-4f874435-80dc-4aaa-bc15-c6beb386bb61?action=share&source=collection_link&creator=32727151"
 	},
 	"item": [
-		{
-			"name": "127.0.0.1:8000/api/login/",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "email",
-							"value": "devuser@gmail.com",
-							"type": "text"
-						},
-						{
-							"key": "password",
-							"value": "admin12345",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "127.0.0.1:8000/api/login/",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"login",
-						""
-					]
-				}
-			},
-			"response": []
-		},
 		{
 			"name": "127.0.0.1:8000/api/register",
 			"request": {
@@ -80,7 +43,215 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "user register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "devuser@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/register/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jul 2024 15:10:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.12"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"email\": \"devuser@gmail.com\",\n    \"name\": \"\",\n    \"password\": \"pbkdf2_sha256$720000$jL3glifpEjR5guzmkUek9J$aIFnl0Gc9L+v9akN0kSqQVFnVgjxhtlIOTYyMW/x+bg=\"\n}"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8000/api/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "devuser@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/login/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "Gourav@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/login/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jul 2024 08:42:24 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.12"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "483"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcyMTExOTM0NCwiaWF0IjoxNzIxMDMyOTQ0LCJqdGkiOiJhMWZiOGE0ZGI1YTc0YjA1OWI5ZjJhMGFjZjI4ZjU2OSIsInVzZXJfaWQiOjd9.X8WD-OeRBuePQeZqObWEgeMPq-wxfrgzAHF8aQXolO8\",\n    \"access\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMDMzMjQ0LCJpYXQiOjE3MjEwMzI5NDQsImp0aSI6Ijg5ZmM1MTQ4YjViMzRhODg5ZjYyYmEwY2MwZGY1N2NhIiwidXNlcl9pZCI6N30.oMTEuYHfTXDIQOZgkv-Eu0dlMDqaizZ9EIcrYbgYA1Q\"\n}"
+				}
+			]
 		},
 		{
 			"name": "127.0.0.1:8000/api/search/?keyword=root",
@@ -90,7 +261,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MzY2NTc1LCJpYXQiOjE3MTgzNjYyNzUsImp0aSI6IjFiYzhiZDM5NGZmNzRkZjJhYzUwNjdlZjJlMTFlOWVkIiwidXNlcl9pZCI6OH0.KZgxkNvXJBmlJ1RvwNCLOvEFtGhK9UB10H1VeEZTHxU",
+							"value": "{{TOKEN}}",
 							"type": "string"
 						}
 					]
@@ -98,7 +269,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8000/api/search/?keyword=root",
+					"raw": "127.0.0.1:8000/api/search/?keyword=golu",
 					"host": [
 						"127",
 						"0",
@@ -114,12 +285,88 @@
 					"query": [
 						{
 							"key": "keyword",
-							"value": "root"
+							"value": "golu"
 						}
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "user search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/search/?keyword=admin",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"search",
+								""
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "admin"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jul 2024 08:24:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.12"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "348"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 3,\n            \"email\": \"admin1@gmail.com\",\n            \"name\": \"Golu_1\",\n            \"password\": \"pbkdf2_sha256$720000$cRhNRahKsiCgn8OtjVY9J2$pTsBZADjdPBe2qSUoCmKCpFbJ2FlS4fuCSvW6pctFiQ=\"\n        },\n        {\n            \"id\": 1,\n            \"email\": \"admin@gmail.com\",\n            \"name\": \"gourav\",\n            \"password\": \"pbkdf2_sha256$720000$mMnptmomF27PiWX4ixFNPs$VWCnx3BpnvC5iVrd67OvW9wxzgfbwlg4XmPrSXH05uQ=\"\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "127.0.0.1:8000/api/friend-request/send/3/",
@@ -132,7 +379,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MzY2OTk4LCJpYXQiOjE3MTgzNjY2OTgsImp0aSI6ImY0YTM2MTM5ZjgzNTRlNzA5ZGJiNjVkNjAxZmIxNzNhIiwidXNlcl9pZCI6OH0.dhx6emalrETDP77pu8BTATIKTROu5G9nZ4ITaKciH4s",
+							"value": "{{TOEKN}}",
 							"type": "string"
 						}
 					]
@@ -172,7 +419,94 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "friend list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sender",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "receiver",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/friends/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"friends",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jul 2024 08:46:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.12"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 5,\n        \"email\": \"devuser@gmail.com\",\n        \"name\": \"\",\n        \"password\": \"pbkdf2_sha256$720000$jL3glifpEjR5guzmkUek9J$aIFnl0Gc9L+v9akN0kSqQVFnVgjxhtlIOTYyMW/x+bg=\"\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "127.0.0.1:8000/api/friend-request/send/3/",
@@ -226,61 +560,94 @@
 					]
 				}
 			},
-			"response": []
-		},
-		{
-			"name": "127.0.0.1:8000/api/friend-request/send/3/",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MzY2OTk4LCJpYXQiOjE3MTgzNjY2OTgsImp0aSI6ImY0YTM2MTM5ZjgzNTRlNzA5ZGJiNjVkNjAxZmIxNzNhIiwidXNlcl9pZCI6OH0.dhx6emalrETDP77pu8BTATIKTROu5G9nZ4ITaKciH4s",
-							"type": "string"
+			"response": [
+				{
+					"name": "pending request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sender",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "receiver",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/friend-requests/pending/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"friend-requests",
+								"pending",
+								""
+							]
 						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
 						{
-							"key": "sender",
-							"value": "",
-							"type": "text",
-							"disabled": true
+							"key": "Date",
+							"value": "Mon, 15 Jul 2024 08:45:16 GMT"
 						},
 						{
-							"key": "receiver",
-							"value": "",
-							"type": "text",
-							"disabled": true
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.12"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "95"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
 						}
-					]
-				},
-				"url": {
-					"raw": "127.0.0.1:8000/api/friend-requests/pending/",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
 					],
-					"port": "8000",
-					"path": [
-						"api",
-						"friend-requests",
-						"pending",
-						""
-					]
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"sender\": 5,\n        \"receiver\": 7,\n        \"status\": \"pending\",\n        \"timestamp\": \"2024-07-15T08:42:18.427853Z\"\n    }\n]"
 				}
-			},
-			"response": []
+			]
 		},
 		{
 			"name": "127.0.0.1:8000/api/friend-request/send/3/",
@@ -290,7 +657,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MzY3MzM3LCJpYXQiOjE3MTgzNjcwMzcsImp0aSI6IjQ3NjdjYmE3ZjY2MzRmYzFhYWM4ZGExZjBkZThlZTlkIiwidXNlcl9pZCI6OH0.ef2u4LbvjiUG50c5ozCgy0LstWmp6mKvzme-aO95cbU",
+							"value": "{{TOKEN}}",
 							"type": "string"
 						}
 					]
@@ -333,7 +700,237 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "request accepted",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sender",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "receiver",
+									"value": "7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/friend-request/respond/2/accept/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"friend-request",
+								"respond",
+								"2",
+								"accept",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jul 2024 08:46:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.12"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "37"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Friend request accepted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8000/api/friend-request/send/3/ Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sender",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "receiver",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/friend-request/respond/2/accept/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"friend-request",
+						"respond",
+						"2",
+						"accept",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "send request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sender",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "receiver",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/friend-request/send/2/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"friend-request",
+								"send",
+								"2",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jul 2024 08:30:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.12"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Friend request already sent\"\n}"
+				}
+			]
 		}
 	]
 }
